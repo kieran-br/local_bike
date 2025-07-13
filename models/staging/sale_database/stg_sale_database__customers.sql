@@ -1,5 +1,5 @@
 select
-    customer_id,
+    customer_id
     first_name AS customer_first_name,
     last_name AS customer_last_name,
     phone AS customer_phone,
