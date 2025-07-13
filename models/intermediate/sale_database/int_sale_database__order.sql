@@ -27,6 +27,7 @@ select
     oi.order_id,
     oi.customer_id,
     customer_city,
+    customer_state,
     coalesce(total_distinct_item,0) as total_distinct_item,
     coalesce(total_order_amount,0) as total_order_amount,
     coalesce(total_items,0) as total_items,
