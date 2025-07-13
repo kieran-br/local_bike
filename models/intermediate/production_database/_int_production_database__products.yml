@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_production_database__products
+    description: "TThis model contains information about brands, categories, product name, model year and quantity available in each stores of the bikes solds."
+    columns:
+      - name: product_id
+        description: "Primary key, unique identifier for each product."
+        tests:
+          - unique
+          - not_null
