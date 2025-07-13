@@ -15,15 +15,14 @@ group by
 )
 
 select
-c.customer_id,
-c.customer_city,
-c.customer_state,
+os.customer_id,
+os.customer_city,
+os.customer_state,
 os.total_amount_spents,
 os.total_items,
 os.total_distinct_items,
 os.total_orders,
 p.favorite_product_id
-from {{ ref('stg_sale_database__customers') }} as c
-inner join orders_summary os on os.customer_id = c.customer_id
+from orders_summary as os
 left join {{ ref('int_sale_database__customer_favorite_product') }} p
-on c.customer_id = p.customer_id
+on os.customer_id = p.customer_id
