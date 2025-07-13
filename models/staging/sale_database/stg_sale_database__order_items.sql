@@ -3,8 +3,8 @@ select
     order_id,
     item_id,
     product_id,
-    quantity,
-    list_price,
+    quantity as item_quantity,
+    list_price as unit_price,
     discount,
     (list_price * quantity)*(1-discount) as total_order_items_amount
 from {{ source('sale_database', 'order_items') }}
