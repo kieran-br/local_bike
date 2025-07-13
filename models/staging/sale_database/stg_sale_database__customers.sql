@@ -1,6 +1,6 @@
 select
-    customer_id
-    first_name AS customer_first_name
+    customer_id,
+    first_name AS customer_first_name,
     last_name AS customer_last_name,
     phone AS customer_phone,
     email AS customer_email,
