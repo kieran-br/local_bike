@@ -1,5 +1,5 @@
 version: 2
 
 models:
-  - name: mrt_monthly_selling_product
+  - name: mrt_selling_monthly_product
     description: '{{ doc("mrt_selling_monthly_product") }}'
