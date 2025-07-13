@@ -1,6 +1,6 @@
 {% docs mrt_order_monthly_report %}
 
-This model generates a daily summary of orders, including the following metrics:
+This model generates a monthly summary of orders, including the following metrics:
 - **Total orders.**
 - **Total users.** 
 - **Average delivery time in days.**
