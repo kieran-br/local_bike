@@ -55,8 +55,8 @@ models:
         description: "Foreign key linking the product item to the corresponding quantity."
         tests:
           - relationships:
-              name: brand_id_id_foreign_key_in_stg_production_database__products
-              to: ref('stg_production_database__brands')
+              name: product_id_id_foreign_key_in_stg_production_database__products
+              to: ref('stg_production_database__products')
               field: product_id
       - name: store_id
         description: "Foreign key linking the product item to the corresponding store."
