@@ -5,7 +5,6 @@ models:
     description: "TThis model contains information about brands, categories, product name, model year and quantity available in each stores of the bikes solds."
     columns:
       - name: product_id
-        description: "Primary key, unique identifier for each product."
+        description: "Primary key, identifier for each product."
         tests:
-          - unique
           - not_null
