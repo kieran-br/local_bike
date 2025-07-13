@@ -1,4 +1,4 @@
-{% docs mrt_monthly_selling_product %}
+{% docs mrt_selling_monthly_product %}
 
 This model generates a summary of the best selling product, including the following metrics:
 - **Total orders amount by product.**
